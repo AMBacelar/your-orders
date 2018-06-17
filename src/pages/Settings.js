@@ -17,11 +17,9 @@ class Settings extends React.Component{
 	}
 
 	onClick(e){
-		console.log(e.target.checked);
 		this.props.setSettings({[e.target.name]:e.target.checked});
 	}
 	onBlur(e){
-		console.log(e.target.value);
 		this.props.setSettings({[e.target.name]:e.target.value});
 	}
 

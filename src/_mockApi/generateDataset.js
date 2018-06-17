@@ -58,12 +58,10 @@ function noDuplicateCodes(dataset){
   dataset.forEach(element => {
     const index = library.indexOf(element.productCode);
     if (index > -1) {
-      console.log('fail', index, element.productCode);
       return false;
     }
     library.push(element.productCode);
   });
-  console.log('all good');
   return true;
 }
 
